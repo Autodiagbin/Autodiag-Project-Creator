@@ -1,0 +1,19 @@
+{
+    "marque": "DORO",
+    "modele": "DOROLOL",
+    "autodiag": "Autodiag Orange",
+    "specifite": [
+        "eSim"
+    ],
+    "options": [
+        "Bixsby"
+    ],
+    "path": "E:\\Projects\\Autodiag Project Creator\\Export\\DOROLOL",
+    "printcpt": "Aucun",
+    "creator": "RMansouri",
+    "date_created": "05/11/22",
+    "version": "",
+    "type_objet": [
+        "G\u00e9n\u00e9rique"
+    ]
+}
