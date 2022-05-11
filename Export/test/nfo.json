@@ -1,0 +1,19 @@
+{
+    "marque": "ACER",
+    "modele": "test",
+    "autodiag": "Autodiag Free",
+    "specifite": [
+        "eSim",
+        "5G"
+    ],
+    "options": [
+        "Bixsby",
+        "Mode Silencieux ON / OFF"
+    ],
+    "path": "E:\\Projects\\Autodiag Project Creator\\Export\\test",
+    "printcpt": "Sur le c\u00f4t\u00e9 (Gauche)",
+    "creator": "RMansouri",
+    "date_created": "05/11/22",
+    "version": "",
+    "type_objet": []
+}
