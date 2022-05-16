@@ -1,0 +1,146 @@
+{
+  "5G": {
+        "5G" : []
+  },
+  "eSim": {
+        "eSim ajouté": [],
+        "eSim Supprimé": []
+  },
+  "Dual Sim": {
+
+  },
+  "Feature Phone": {
+
+  },
+  "Pas de Serv. Google": {
+        "Google Assistant": [],
+        "Voice Match": [],
+        "Gmail - Supprimer Mail": [],
+        "Google Maps": []
+  },
+  "USB Type-A": {
+
+  },
+  "USB Type-MicroUSB": {
+
+  },
+  "Ap. Photo special": {
+
+  },
+  "Bixsby": {
+    "Bixsby" : ["Mon screen bixsby"]
+  },
+  "Mode Silencieux ON / OFF": {
+
+  },
+  "Raccourci Camera": {
+
+  },
+  "Bouton d'option Customizable": {
+
+  },
+  "Bouton physique centrale": {
+
+  },
+  "Commun": {
+      "Appli Récentes" : [],
+      "Eteindre" : [],
+      "Accueil" : [],
+      "Accueil Mode Silencieux" : [],
+      "Accueil Son Actif" : [],
+      "Desinstall BTV" : [],
+      "Desinstall Facebook" : [],
+      "Desinstall Mess Vocal Free" : [],
+      "Desinstall Orange TV" : [],
+      "Sim absente" : [],
+      "Reseau abstent" : [],
+      "Volet Vibreur" : [],
+      "Volet Mode Avion" : [],
+      "Volet Mode Silencieux" : [],
+      "Volet Données Mobiles" : [],
+      "Volet Notif Complet" : [],
+      "Volet Son Activé" : [],
+      "Volet Wifi Activé" : [],
+      "Volet Wifi Bluetooth" : [],
+      "Volet Connexion PC" : [],
+      "Alarme" : [],
+      "Prise Vidéo" : [],
+      "Photo Fleur" : [],
+      "Appel" : [],
+      "Recevoir Mess. Vocal" : [],
+      "Transfert d'appel" : [],
+      "Youtube" : [],
+      "Configure E-Mail" : [],
+      "Application Mail" : [],
+      "Supprimer Mail" : [],
+      "Petal Maps" : [],
+      "Dictaphone" : [],
+      "Pictos" : [],
+      "Galerie Lecture Vidéo" : [],
+      "Galerie Supprimer Photos" : [],
+      "Mode Sombre" : [],
+      "Autorisation App. Photo" : [],
+      "Autorisation Mess Vocale Free" : [],
+      "Autorisation BTV" : [],
+      "Autorisation Facebook" : [],
+      "Autorisation Maps" : [],
+      "Autorisation Orange TV" : [],
+      "Autorisation Store d'appli" : [],
+      "Autorisation Waze" : [],
+      "Effacer données Appareil Photo" : [],
+      "Effacer données Mess Vocale Free" : [],
+      "Effacer données BTV" : [],
+      "Effacer données Facebook" : [],
+      "Effacer données Maps" : [],
+      "Effacer données Orange TV" : [],
+      "Effacer données Store d'appli" : [],
+      "Effacer données Waze" : [],
+      "Effacer Cache Appareil_photo" : [],
+      "Effacer Cache Mess Vocale Free" : [],
+      "Effacer Cache BTV" : [],
+      "Effacer Cache Facebook" : [],
+      "Effacer Cache Maps" : [],
+      "Effacer Cache Orange TV" : [],
+      "Effacer Cache Store d'appli" : [],
+      "Effacer Cache Waze" : [],
+      "Consommation des applis Batterie" : [],
+      "Optimisation Batterie" : [],
+      "Mode éco. d'énérgie" : [],
+      "Bluetooth" : [],
+      "Mise à jour du téléphone" : [],
+      "Localisation amélioré" : [],
+      "Localisation desactivé" : [],
+      "Localisation activé" : [],
+      "2G" : [],
+      "3G" : [],
+      "4G" : [],
+      "APN MMS" : [],
+      "APN réseau" : [],
+      "Données mobiles activé/desactivé" : [],
+      "Partage connexion" : [],
+      "Code verrouillage" : [],
+      "Schéma verouillage" : [],
+      "Sonnerie activer" : [],
+      "Sonnerie et vibreur activé" : [],
+      "Vibreur" : [],
+      "Volume sonnerie" : [],
+      "Suppr. Fichier via Gestionnaire Fichier" : [],
+      "Stockage restant" : [],
+      "Reinit. Param Réseau" : [],
+      "Reinit. Param Usine - Dans les menus" : [],
+      "Reinit. Param Localisation Confident." : [],
+      "Réinit. Param Usine - Au demarrage" : [],
+      "WIFI" : [],
+      "Smart Switch" : [],
+      "PC connexion - Autorisation" : [],
+      "PC connexion - Sur Windows" : [],
+      "PC - Transfert fichier" : [],
+      "Télécharger l'app Orange" : [],
+      "Télécharger l'app BTV" : [],
+      "Télécharger l'app Tiers" : [],
+      "Mettre à jour les applis - Toutes" : [],
+      "SMS - Créer" : [],
+      "SMS - Supprimer" : []
+  }
+}
+
