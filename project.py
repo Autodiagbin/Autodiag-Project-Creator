@@ -2,12 +2,17 @@ import os
 from datetime import date
 import json
 import logging
+import src.arborescence_collector as cst
 
 CUR_DIR = os.path.abspath(os.getcwd())
 DATA_DIR = os.path.join(CUR_DIR, "data")
 FOLDERS_DATABASE = os.path.join(DATA_DIR, "arborescence_dossier.json")
 
 logging.basicConfig(level=logging.WARNING)
+
+
+def get_user():
+    return os.getlogin()
 
 
 class Project:
@@ -20,18 +25,23 @@ class Project:
         self.options = options
         self.path = path
         self.printcpt = printcpt
-        self.creator = self.getUser()
+        self.creator = get_user()
         self.date_created = date.today().strftime('%m/%d/%y')
         self.version = version
         self.type_objet = type_objet
 
     def __str__(self) -> str:
-        return f"Dossier projet : {self.marque} {self.modele} - Autodiag : {self.autodiag} OPT : {self.specifite} avec options {self.options} - Destination : {self.path}"
+        return f"Dossier projet : {self.marque} {self.modele} - Autodiag : {self.autodiag} OPT : {self.specifite} " \
+               f"avec options {self.options} - Destination : {self.path}"
 
-    def getUser(self):
-        return os.getlogin()
+    def create_project(self):
+        # TODO : Vérifier ce que retourne cette fonction et agir en conséquence en créant l'arbre avant traitement
+        # try:
+        #     cst.construct_tree(settings=self.__dict__)
+        # except Exception:
+        #     logging.error("Echec de construction de l'arbre")
+        #     return False
 
-    def createProject(self):
         if os.path.isfile(FOLDERS_DATABASE):
             with open(FOLDERS_DATABASE, "r") as fd:
                 data = json.load(fd)

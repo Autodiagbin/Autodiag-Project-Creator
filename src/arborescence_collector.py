@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+from pprint import pprint
 
 CUR_DIR = Path().cwd().resolve()
 DATABASE = CUR_DIR / "arborescence_source.json"
@@ -16,7 +17,8 @@ def construct_folders(settings):
             todo = {}
             for match in collect:
                 if match in all_results.keys():
-                    folders.append(match)
+                    # TODO : Trouver comment insérer les clé dans folder.append sans les dict_keys qui peut provoquer un erreur
+                    folders.append(all_results[match].keys())
                     todo[match] = all_results[match].values()
             folders = folders + list(all_results["Commun"].keys())
 
@@ -33,5 +35,27 @@ def construct_tree(settings):
         json.dump(obj=base, fp=db)
     return True
 
-
-construct_tree()
+if __name__ =="__main__":
+    settings = {
+    "marque": "Blackberry",
+    "modele": "sdf",
+    "autodiag": "Autodiag Bouygues",
+    "specifite": [
+        "5G",
+        "Feature Phone"
+    ],
+    "options": [
+        "Bixsby",
+        "Mode Silencieux ON / OFF"
+    ],
+    "path": "E:\\Projects\\Autodiag Project Creator\\Export\\sdf",
+    "printcpt": "Sur l'\u00e9cran",
+    "creator": "RMansouri",
+    "date_created": "05/16/22",
+    "version": "sdf",
+    "type_objet": [
+        "G\u00e9n\u00e9rique"
+    ]
+}
+    m = construct_folders(settings)[0]
+    pprint(m)

@@ -438,7 +438,7 @@ class Ui_main_window(object):
                                           autodiag=self.cbb_autodiag.currentText(), path=dir, specifite=spec_validated,
                                           options=options_validated, printcpt=self.cbb_locate.currentText(),
                                           version=self.input_version.text(), type_objet=type_objet)
-            new_project.createProject()
+            new_project.create_project()
 
             # On pousse dans l'historique l'objet
             self.push_history(new_project)
@@ -474,7 +474,7 @@ class Ui_main_window(object):
         self.get_history(search=my_search)
 
     def get_history(self, search=None):
-        if search == None or search == "" or search == False:
+        if search is None or search == "" or search == False:
             historique = DB.all()
         else:
             historique = DB.search(where('modele') == search)
