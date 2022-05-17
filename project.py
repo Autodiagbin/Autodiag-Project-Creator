@@ -36,11 +36,9 @@ class Project:
 
     def create_project(self):
         # TODO : Vérifier ce que retourne cette fonction et agir en conséquence en créant l'arbre avant traitement
-        # try:
-        #     cst.construct_tree(settings=self.__dict__)
-        # except Exception:
-        #     logging.error("Echec de construction de l'arbre")
-        #     return False
+
+        print(self.__dict__)
+        cst.construct_tree(user_settings=self.__dict__)
 
         if os.path.isfile(FOLDERS_DATABASE):
             with open(FOLDERS_DATABASE, "r") as fd:
