@@ -39,10 +39,6 @@ def construct_tree(user_settings):
     return todo
 
 
-def get_user():
-    return os.getlogin()
-
-
 class Project:
     def __init__(self, marque: str, modele: str, autodiag: str, specifite: list[str], options: list[str], path: str,
                  printcpt: str = "n/a", version: str = "n/a", type_objet: list[str] = []) -> None:
@@ -62,7 +58,7 @@ class Project:
     def create_project(self):
         # TODO : Vérifier ce que retourne cette fonction et agir en conséquence en créant l'arbre avant traitement
         self.todo = construct_tree(user_settings=self.__dict__)
-
+        print(self.todo)
         if os.path.isfile(FOLDERS_DATABASE):
             with open(FOLDERS_DATABASE, "r") as fd:
                 data = json.load(fd)
@@ -79,6 +75,10 @@ class Project:
 
         else:
             logging.warning("ERREUR 101 : Le fichier d'arborescence de fichier n'existe pas")
+
+
+def get_user():
+    return os.getlogin()
 
 
 def get_marques():

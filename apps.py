@@ -386,24 +386,25 @@ class Ui_main_window(object):
         self.logo.setStyleSheet(f"background-color: None;")
 
     def populate(self):
+        checked_word = "✔"
         # On récupére toutes les entrées dans les fichier CSV dans data
-        self.cbb_autodiag.addItems(project.get_autodiags())  # type: ignore
-        self.cbb_marque.addItems(project.get_marques())  # type: ignore
-        self.cbb_locate.addItems(project.get_capteurs())  # type: ignore
+        self.cbb_autodiag.addItems(project.get_autodiags())
+        self.cbb_marque.addItems(project.get_marques())
+        self.cbb_locate.addItems(project.get_capteurs())
 
         specs = project.get_specificite()
-        for index in range(len(specs)):  # type: ignore
+        for index in range(len(specs)):
             self.all_specs[index].show()
-            self.all_specs[index].setChecked(False)
-            self.all_specs[index].setObjectName(specs[index])  # type: ignore
-            self.all_specs[index].setText(specs[index])  # type: ignore
+            self.all_specs[index].setChecked(specs[index].startswith(checked_word))
+            self.all_specs[index].setObjectName(specs[index].lstrip(checked_word))
+            self.all_specs[index].setText(specs[index].lstrip(checked_word))
 
         options = project.get_options()
-        for index in range(len(options)):  # type: ignore
+        for index in range(len(options)):
             self.all_options[index].show()
-            self.all_options[index].setChecked(False)
-            self.all_options[index].setObjectName(options[index])  # type: ignore
-            self.all_options[index].setText(options[index])  # type: ignore
+            self.all_options[index].setChecked(options[index].startswith(checked_word))
+            self.all_options[index].setObjectName(options[index].lstrip(checked_word))
+            self.all_options[index].setText(options[index].lstrip(checked_word))
 
     def proceed(self):
         # Si la destination n'est pas communiqué on défini le répertoire dans "export"

@@ -1,10 +1,22 @@
 {
   "5G": {
-        "5G" : []
+        "5G" : ["Selection du mode réseau préféré -> 5G"]
   },
   "eSim": {
-        "eSim ajouté": [],
-        "eSim Supprimé": []
+        "eSim ajouté": ["Aller dans Gestionnaire de sim",
+                        "Ajouter un forfait / forfait eSim",
+                        "Prendre le QR code en photo",
+                        "Demande de confirmation d'ajout de la eSim",
+                        "Ajout de la eSim en cours",
+                        "Demande de code PIN eSim",
+                        "eSim ajoutée et activée"],
+
+        "eSim Supprimé": ["Aller dans Gestionnaire de sim",
+                        "Selectionner la eSim",
+                        "Naviguer dans le menu contextuel de eSim",
+                        "Appuyer sur supprimer la eSim",
+                        "Confirmer la suppression",
+                        "Possiblement demande de code PIN eSim"]
   },
   "Dual Sim": {
 
@@ -12,11 +24,18 @@
   "Feature Phone": {
 
   },
-  "Pas de Serv. Google": {
-        "Google Assistant": [],
-        "Voice Match": [],
-        "Gmail - Supprimer Mail": [],
-        "Google Maps": []
+  "Serv. Google": {
+        "Voice Match": ["Via l'accueil ou le Chutier d'appli ouvrir l'app Google",
+                        "Appuyer sur l'image de profil en haut à droite",
+                        "Appuyer sur Assistant Google",
+                        "Appuyer sur Hey Google et Voice Match",
+                        "Activer Hey Google",
+                        "Appuyer sur empreinte vocal"],
+
+        "Gmail - Supprimer Mail": ["Dans Gmail montrer une liste de mail",
+                            "Dans Gmail montrer les mails selectionnés et le btn de sup."],
+
+        "Google Maps": ["Juste montrer l'appli maps avec la carte affichée"]
   },
   "USB Type-A": {
 
@@ -28,7 +47,7 @@
 
   },
   "Bixsby": {
-    "Touche_Bixsby" : ["Mon screen bixsby"]
+        "Touche_Bixsby" : []
   },
   "Mode Silencieux ON / OFF": {
 
@@ -43,16 +62,25 @@
 
   },
   "Commun": {
-      "Appli Récentes" : [],
-      "Eteindre" : [],
-      "Accueil" : [],
-      "Accueil Mode Silencieux" : [],
-      "Accueil Son Actif" : [],
-      "Desinstall BTV" : [],
-      "Desinstall Facebook" : [],
-      "Desinstall Mess Vocal Free" : [],
-      "Desinstall Orange TV" : [],
-      "Sim absente" : [],
+      "Appli Récentes" : ["Montrer l'affichage des apps ouvertes en tâche de fond"],
+
+      "Eteindre" : ["Montrer l'affichage du btn d'extinction de l'écran"],
+
+      "Accueil" : ["Prendre l'accueil"],
+
+      "Accueil Mode Silencieux" : ["Dans l'accueil activer le commut. Silencieux",
+                                    "Dans l'accueil désactiver le commut. Silencieux"
+      ],
+
+      "Accueil Son Actif" : ["Monter le son au maximum via l'accueil avec la barre son apparente",
+                        "Baisser le son  au minimum via l'accueil avec la barre de son apparente"
+      ],
+
+      "Desinstall BTV" : ["GENERAL| Toutes les étapes de desinstallation BTV"],
+      "Desinstall Facebook" : ["GENERAL| Toutes les étapes de desinstallation Facebook"],
+      "Desinstall Mess Vocal Free" : ["GENERAL| Toutes les étapes de desinstallation Vocal Free"],
+      "Desinstall Orange TV" : ["GENERAL| Toutes les étapes de desinstallation Orange TV"],
+      "Sim absente" : [""],
       "Reseau abstent" : [],
       "Volet Vibreur" : [],
       "Volet Mode Avion" : [],
