@@ -2,13 +2,41 @@ import os
 from datetime import date
 import json
 import logging
-import src.arborescence_collector as cst
+
+logging.basicConfig(level=logging.WARNING)
 
 CUR_DIR = os.path.abspath(os.getcwd())
 DATA_DIR = os.path.join(CUR_DIR, "data")
 FOLDERS_DATABASE = os.path.join(DATA_DIR, "arborescence_dossier.json")
+DATABASE = os.path.join(CUR_DIR, "src", "arborescence_source.json")
+DATABASE_BASE = os.path.join(CUR_DIR, "src", "arborescence_base.json")
 
-logging.basicConfig(level=logging.WARNING)
+
+def construct_folders(user_settings):
+    collect = user_settings["specifite"] + user_settings["options"]
+    if os.path.exists(DATABASE):
+        with open(DATABASE, "r", encoding='utf-8') as db:
+            all_results = json.load(db)
+            folders = []
+            todo = {}
+            for match in collect:
+                if match in all_results.keys():
+                    folders = folders + [i for i in all_results[match].keys() if i]
+                    todo[match] = [i for i in all_results[match].values() if i]
+            folders = folders + list(all_results["Commun"].keys())
+            for com in all_results["Commun"].keys():
+                todo[com] = all_results["Commun"][com]
+    return folders, todo
+
+
+def construct_tree(user_settings):
+    todo = construct_folders(user_settings)[1]
+    with open(DATABASE_BASE, "r", encoding='utf-8') as db:
+        base = json.load(db)
+    base["SCREENSHOT"] = base["SCREENSHOT"] + list(construct_folders(user_settings)[0])
+    with open(FOLDERS_DATABASE, "w", encoding='utf-8') as db:
+        json.dump(obj=base, fp=db)
+    return todo
 
 
 def get_user():
@@ -29,16 +57,11 @@ class Project:
         self.date_created = date.today().strftime('%m/%d/%y')
         self.version = version
         self.type_objet = type_objet
-
-    def __str__(self) -> str:
-        return f"Dossier projet : {self.marque} {self.modele} - Autodiag : {self.autodiag} OPT : {self.specifite} " \
-               f"avec options {self.options} - Destination : {self.path}"
+        self.todo = {}
 
     def create_project(self):
         # TODO : Vérifier ce que retourne cette fonction et agir en conséquence en créant l'arbre avant traitement
-
-        print(self.__dict__)
-        cst.construct_tree(user_settings=self.__dict__)
+        self.todo = construct_tree(user_settings=self.__dict__)
 
         if os.path.isfile(FOLDERS_DATABASE):
             with open(FOLDERS_DATABASE, "r") as fd:
