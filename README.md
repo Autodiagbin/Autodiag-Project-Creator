@@ -1,16 +1,17 @@
+
 # Project Autodiag Manager
 
-The software can create an entire project using a folder tree.
-The folder tree is specific for the phone and the specifications.
+Il est possible grâce à cet outil de créer un package de dossier prêt à l'emploi pour organiser le traitement d'un produit Autodiag.
+Passer par cet outil pour créer son dossier de traitement assure un suivi précis des fichiers que l'on traite parmi les Autodiagers.
+
+
 
 
 ## RoadMap.
 
- - [x] Create the program and the main object
- - [x] Create a little database using a JSON file 
- - [x] Create the layout of the UI
- - [x] Create the link between the sorter app and the UI
- - [ ] Customize the UI
- - [ ] Save the last Settings in the sorter
- - [ ] Log every actions to prevent any missing files after using it
+ - [x] Créer un projet
+ - [x] Créer un suivi de dossier au format JSON
+ - [x] Créer une GUI abordable
+ - [ ] Créer la prochaine release qui inclura une base de donnée accessible pour une dashboard Web & Excel
+
 
