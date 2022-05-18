@@ -6,6 +6,9 @@ Passer par cet outil pour créer son dossier de traitement assure un suivi préc
 
 
 
+Vous pouvez télécharger la derniére version ici : 
+[Télécharger](https://github.com/Autodiagbin/Autodiag-Project-Creator/releases/download/APCv0.1/AutodiagPC.v0.1.rar) 
+
 
 ## RoadMap.
 
