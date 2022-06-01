@@ -34,7 +34,7 @@ class Ui_main_window(object):
         self.btn_proceed.clicked.connect(self.proceed)
         self.btn_folder = QtWidgets.QPushButton(self.tab_run)
         self.btn_folder.setGeometry(QtCore.QRect(350, 510, 171, 41))
-        self.btn_folder.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))  # type: ignore
+        self.btn_folder.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))  
         self.btn_folder.setObjectName("btn_folder")
         self.btn_folder.hide()
         self.grp_basics = QtWidgets.QGroupBox(self.tab_run)
@@ -44,7 +44,7 @@ class Ui_main_window(object):
         self.lab_marque.setGeometry(QtCore.QRect(10, 70, 61, 16))
         self.lab_marque.setStyleSheet("font: 10pt \"Trebuchet MS\";\n"
                                       "font-weight: bold;")
-        self.lab_marque.setTextFormat(QtCore.Qt.RichText)  # type: ignore
+        self.lab_marque.setTextFormat(QtCore.Qt.RichText)  
         self.lab_marque.setObjectName("lab_marque")
         self.cbb_marque = QtWidgets.QComboBox(self.grp_basics)
         self.cbb_marque.setGeometry(QtCore.QRect(10, 90, 131, 22))
@@ -53,7 +53,7 @@ class Ui_main_window(object):
         self.lab_model.setGeometry(QtCore.QRect(10, 120, 61, 16))
         self.lab_model.setStyleSheet("font: 10pt \"Trebuchet MS\";\n"
                                      "font-weight: bold;")
-        self.lab_model.setTextFormat(QtCore.Qt.RichText)  # type: ignore
+        self.lab_model.setTextFormat(QtCore.Qt.RichText)  
         self.lab_model.setObjectName("lab_model")
         self.input_model = QtWidgets.QLineEdit(self.grp_basics)
         self.input_model.setGeometry(QtCore.QRect(10, 140, 241, 20))
@@ -62,7 +62,7 @@ class Ui_main_window(object):
         self.lab_autodiag.setGeometry(QtCore.QRect(10, 20, 61, 16))
         self.lab_autodiag.setStyleSheet("font: 10pt \"Trebuchet MS\";\n"
                                         "font-weight: bold;")
-        self.lab_autodiag.setTextFormat(QtCore.Qt.RichText)  # type: ignore
+        self.lab_autodiag.setTextFormat(QtCore.Qt.RichText)  
         self.lab_autodiag.setObjectName("lab_autodiag")
         self.cbb_autodiag = QtWidgets.QComboBox(self.grp_basics)
         self.cbb_autodiag.setGeometry(QtCore.QRect(10, 40, 241, 22))
@@ -74,7 +74,7 @@ class Ui_main_window(object):
         self.lab_locate.setGeometry(QtCore.QRect(20, 30, 121, 16))
         self.lab_locate.setStyleSheet("font: 10pt \"Trebuchet MS\";\n"
                                       "font-weight: bold;")
-        self.lab_locate.setTextFormat(QtCore.Qt.RichText)  # type: ignore
+        self.lab_locate.setTextFormat(QtCore.Qt.RichText)  
         self.lab_locate.setObjectName("lab_locate")
         self.cbb_locate = QtWidgets.QComboBox(self.grp_options)
         self.cbb_locate.setGeometry(QtCore.QRect(20, 50, 171, 22))
@@ -240,42 +240,42 @@ class Ui_main_window(object):
         self.lb_prefix.setObjectName("lb_prefix")
         self.cb_suivi = QtWidgets.QCheckBox(self.tab_opt_sup)
         self.cb_suivi.setGeometry(QtCore.QRect(0, 60, 141, 17))
-        self.cb_suivi.setLayoutDirection(QtCore.Qt.RightToLeft)  # type: ignore
+        self.cb_suivi.setLayoutDirection(QtCore.Qt.RightToLeft)  
         self.cb_suivi.setTristate(False)
         self.cb_suivi.setObjectName("cb_suivi")
 
         self.btn_dir = QtWidgets.QToolButton(self.tab_opt_sup)
         self.btn_dir.setGeometry(QtCore.QRect(490, 120, 31, 21))
         self.btn_dir.setPopupMode(QtWidgets.QToolButton.InstantPopup)
-        self.btn_dir.setToolButtonStyle(QtCore.Qt.ToolButtonFollowStyle)  # type: ignore
+        self.btn_dir.setToolButtonStyle(QtCore.Qt.ToolButtonFollowStyle)  
         self.btn_dir.setObjectName("btn_dir")
         self.btn_dir.clicked.connect(self.get_directory)
 
         self.btn_delete_histo = QtWidgets.QToolButton(self.tab_opt_sup)
         self.btn_delete_histo.setGeometry(QtCore.QRect(470, 180, 41, 23))
         self.btn_delete_histo.setPopupMode(QtWidgets.QToolButton.InstantPopup)
-        self.btn_delete_histo.setToolButtonStyle(QtCore.Qt.ToolButtonFollowStyle)  # type: ignore
+        self.btn_delete_histo.setToolButtonStyle(QtCore.Qt.ToolButtonFollowStyle)  
         self.btn_delete_histo.setObjectName("btn_delete_histo")
         self.btn_delete_histo.clicked.connect(self.delete_from_history)
 
         self.btn_search_histo = QtWidgets.QToolButton(self.tab_opt_sup)
         self.btn_search_histo.setGeometry(QtCore.QRect(190, 180, 75, 23))
         self.btn_search_histo.setPopupMode(QtWidgets.QToolButton.InstantPopup)
-        self.btn_search_histo.setToolButtonStyle(QtCore.Qt.ToolButtonFollowStyle)  # type: ignore
+        self.btn_search_histo.setToolButtonStyle(QtCore.Qt.ToolButtonFollowStyle)  
         self.btn_search_histo.setObjectName("btn_search_histo")
         self.btn_search_histo.clicked.connect(self.search)
 
         self.btn_search_all = QtWidgets.QToolButton(self.tab_opt_sup)
         self.btn_search_all.setGeometry(QtCore.QRect(290, 180, 75, 23))
         self.btn_search_all.setPopupMode(QtWidgets.QToolButton.InstantPopup)
-        self.btn_search_all.setToolButtonStyle(QtCore.Qt.ToolButtonFollowStyle)  # type: ignore
+        self.btn_search_all.setToolButtonStyle(QtCore.Qt.ToolButtonFollowStyle)  
         self.btn_search_all.setObjectName("btn_search_all")
         self.btn_search_all.clicked.connect(self.get_history)
 
         self.btn_open_directory = QtWidgets.QToolButton(self.tab_opt_sup)
         self.btn_open_directory.setGeometry(QtCore.QRect(420, 180, 41, 23))
         self.btn_open_directory.setPopupMode(QtWidgets.QToolButton.InstantPopup)
-        self.btn_open_directory.setToolButtonStyle(QtCore.Qt.ToolButtonFollowStyle)  # type: ignore
+        self.btn_open_directory.setToolButtonStyle(QtCore.Qt.ToolButtonFollowStyle)  
         self.btn_open_directory.setObjectName("btn_open_directory")
         self.btn_open_directory.clicked.connect(self.open_dir)
 
@@ -307,7 +307,7 @@ class Ui_main_window(object):
         self.lab_version.setGeometry(QtCore.QRect(150, 70, 61, 16))
         self.lab_version.setStyleSheet("font: 10pt \"Trebuchet MS\";\n"
                                        "font-weight: bold;")
-        self.lab_version.setTextFormat(QtCore.Qt.RichText)  # type: ignore
+        self.lab_version.setTextFormat(QtCore.Qt.RichText)  
         self.lab_version.setObjectName("lab_version")
 
         self.input_version = QtWidgets.QLineEdit(self.grp_basics)
@@ -427,18 +427,18 @@ class Ui_main_window(object):
             # On rempli les spécificités rentré par l'utilisateur - en vérifiant qu'il sont cochés
             spec_validated = [spec.text() for spec in self.all_specs if spec.isChecked()]
             options_validated = [opt.text() for opt in self.all_options if opt.isChecked()]
-            type_objet = []
+            writing = []
             if self.cb_specifique.isChecked():
-                type_objet.append("Spécifique")
+                writing.append("Spécifique")
             if self.cb_generique.isChecked():
-                type_objet.append("Générique")
+                writing.append("Générique")
 
             # On crée le projet
             modele_suffixed = self.input_prefix.text() + self.input_model.text()
             new_project = project.Project(marque=self.cbb_marque.currentText(), modele=modele_suffixed,
                                           autodiag=self.cbb_autodiag.currentText(), path=dir, specifite=spec_validated,
                                           options=options_validated, printcpt=self.cbb_locate.currentText(),
-                                          version=self.input_version.text(), type_objet=type_objet)
+                                          version=self.input_version.text(), writing=writing)
             new_project.create_project()
 
             # On pousse dans l'historique l'objet

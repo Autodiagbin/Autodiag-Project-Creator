@@ -35,13 +35,13 @@ def construct_tree(user_settings):
         base = json.load(db)
     base["SCREENSHOT"] = base["SCREENSHOT"] + list(construct_folders(user_settings)[0])
     with open(FOLDERS_DATABASE, "w", encoding='utf-8') as db:
-        json.dump(obj=base, fp=db)
+        json.dump(obj=base, fp=db, indent=4)
     return todo
 
 
 class Project:
-    def __init__(self, marque: str, modele: str, autodiag: str, specifite: list[str], options: list[str], path: str,
-                 printcpt: str = "n/a", version: str = "n/a", type_objet: list[str] = []) -> None:
+    def __init__(self, marque: str, modele: str, autodiag: str, specifite: list, options: list,
+                 writing: list, path: str, printcpt: str = "n/a", version: str = "n/a"):
         self.marque = marque
         self.modele = modele
         self.autodiag = autodiag
@@ -52,7 +52,7 @@ class Project:
         self.creator = get_user()
         self.date_created = date.today().strftime('%m/%d/%y')
         self.version = version
-        self.type_objet = type_objet
+        self.writing = writing
         self.todo = {}
 
     def create_project(self):

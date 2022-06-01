@@ -25,17 +25,32 @@
 
   },
   "Serv. Google": {
-        "Voice Match": ["Via l'accueil ou le Chutier d'appli ouvrir l'app Google",
-                        "Appuyer sur l'image de profil en haut à droite",
-                        "Appuyer sur Assistant Google",
-                        "Appuyer sur Hey Google et Voice Match",
-                        "Activer Hey Google",
-                        "Appuyer sur empreinte vocal"],
+        "Voice Match": [
+        "Menu paramétre",
+        "Menu Google",
+        "Accueil avec focus sur dossier google si present",
+        "Menu Dossier google si présent",
+        "Appli google accueil",
+        "Mon icone de profil",
+        "Menu profil sur label paramétre",
+        "Menu paramétre google",
+        "Section Voix",
+        "Section Voice match",
+        "Cocher Ok Google"
+        ],
 
-        "Gmail - Supprimer Mail": ["Dans Gmail montrer une liste de mail",
-                            "Dans Gmail montrer les mails selectionnés et le btn de sup."],
+        "Gmail - Supprimer Mail": [
+        "Dossier google si présent",
+        "Accueil ou tiroir appli : Logo Gmail",
+        "Afficher les mails",
+        "Selectionner les mails Afficher la corbeille de sup"
+        ],
 
-        "Google Maps": ["Juste montrer l'appli maps avec la carte affichée"]
+        "Google Maps": [
+        "Dossier google si présent",
+        "Accueil ou tiroir appli : Logo Google maps",
+        "Maps apparente avec localisation de l appareil"
+        ]
   },
   "USB Type-A": {
 
@@ -62,113 +77,462 @@
 
   },
   "Commun": {
-      "Appli Récentes" : ["Montrer l'affichage des apps ouvertes en tâche de fond"],
-
-      "Eteindre" : ["Montrer l'affichage du btn d'extinction de l'écran"],
-
-      "Accueil" : ["Prendre l'accueil"],
-
-      "Accueil Mode Silencieux" : ["Dans l'accueil activer le commut. Silencieux",
-                                    "Dans l'accueil désactiver le commut. Silencieux"
-      ],
-
-      "Accueil Son Actif" : ["Monter le son au maximum via l'accueil avec la barre son apparente",
-                        "Baisser le son  au minimum via l'accueil avec la barre de son apparente"
-      ],
-
-      "Desinstall BTV" : ["GENERAL| Toutes les étapes de desinstallation BTV"],
-      "Desinstall Facebook" : ["GENERAL| Toutes les étapes de desinstallation Facebook"],
-      "Desinstall Mess Vocal Free" : ["GENERAL| Toutes les étapes de desinstallation Vocal Free"],
-      "Desinstall Orange TV" : ["GENERAL| Toutes les étapes de desinstallation Orange TV"],
-      "Sim absente" : [""],
-      "Reseau abstent" : [],
-      "Volet Vibreur" : [],
-      "Volet Mode Avion" : [],
-      "Volet Mode Silencieux" : [],
-      "Volet Données Mobiles" : [],
-      "Volet Notif Complet" : [],
-      "Volet Son Activé" : [],
-      "Volet Wifi Activé" : [],
-      "Volet Wifi Bluetooth" : [],
-      "Volet Connexion PC" : [],
-      "Alarme" : [],
-      "Prise Vidéo" : [],
-      "Photo Fleur" : [],
-      "Appel" : [],
-      "Recevoir Mess. Vocal" : [],
-      "Transfert d'appel" : [],
-      "Youtube" : [],
-      "Configure E-Mail" : [],
-      "Application Mail" : [],
-      "Supprimer Mail" : [],
-      "Petal Maps" : [],
-      "Dictaphone" : [],
-      "Pictos" : [],
-      "Galerie Lecture Vidéo" : [],
-      "Galerie Supprimer Photos" : [],
-      "Mode Sombre" : [],
-      "Autorisation App. Photo" : [],
-      "Autorisation Mess Vocale Free" : [],
-      "Autorisation BTV" : [],
-      "Autorisation Facebook" : [],
-      "Autorisation Maps" : [],
-      "Autorisation Orange TV" : [],
-      "Autorisation Store d'appli" : [],
-      "Autorisation Waze" : [],
-      "Effacer données Appareil Photo" : [],
-      "Effacer données Mess Vocale Free" : [],
-      "Effacer données BTV" : [],
-      "Effacer données Facebook" : [],
-      "Effacer données Maps" : [],
-      "Effacer données Orange TV" : [],
-      "Effacer données Store d'appli" : [],
-      "Effacer données Waze" : [],
-      "Effacer Cache Appareil_photo" : [],
-      "Effacer Cache Mess Vocale Free" : [],
-      "Effacer Cache BTV" : [],
-      "Effacer Cache Facebook" : [],
-      "Effacer Cache Maps" : [],
-      "Effacer Cache Orange TV" : [],
-      "Effacer Cache Store d'appli" : [],
-      "Effacer Cache Waze" : [],
-      "Consommation des applis Batterie" : [],
-      "Optimisation Batterie" : [],
-      "Mode éco. d'énérgie" : [],
-      "Bluetooth" : [],
-      "Mise à jour du téléphone" : [],
-      "Localisation amélioré" : [],
-      "Localisation desactivé" : [],
-      "Localisation activé" : [],
-      "2G" : [],
-      "3G" : [],
-      "4G" : [],
-      "APN MMS" : [],
-      "APN réseau" : [],
-      "Données mobiles activé/desactivé" : [],
-      "Partage connexion" : [],
-      "Code verrouillage" : [],
-      "Schéma verouillage" : [],
-      "Sonnerie activer" : [],
-      "Sonnerie et vibreur activé" : [],
-      "Vibreur" : [],
-      "Volume sonnerie" : [],
-      "Suppr. Fichier via Gestionnaire Fichier" : [],
-      "Stockage restant" : [],
-      "Reinit. Param Réseau" : [],
-      "Reinit. Param Usine - Dans les menus" : [],
-      "Reinit. Param Localisation Confident." : [],
-      "Réinit. Param Usine - Au demarrage" : [],
-      "WIFI" : [],
-      "Smart Switch" : [],
-      "PC connexion - Autorisation" : [],
-      "PC connexion - Sur Windows" : [],
-      "PC - Transfert fichier" : [],
-      "Télécharger l'app Orange" : [],
-      "Télécharger l'app BTV" : [],
-      "Télécharger l'app Tiers" : [],
-      "Mettre à jour les applis - Toutes" : [],
-      "SMS - Créer" : [],
-      "SMS - Supprimer" : []
+    "Accueil": [
+        "Accueil avec Apps opérateur",
+        "Accueil avec Apps Tiers"
+    ],
+    "Sim absente": [
+        "Accueil sans Sim"
+    ],
+    "Accueil Mode Silencieux": [
+        "Mode silencieux",
+        "Mode vibreur",
+        "Mode son"
+    ],
+    "Accueil Son Actif": [
+        "Son au minimum",
+        "Son au maximum"
+    ],
+    "Volet Données Mobiles": [
+        "Volet baissé aucun btn actif",
+        "Donnée Mobile btn actif"
+    ],
+    "Volet Mode Avion": [
+        "Volet baissé aucun btn actif",
+        "Avion btn actif"
+    ],
+    "Volet Mode Silencieux": [
+        "Volet baissé aucun btn actif",
+        "Données mode silencieux btn actif"
+    ],
+    "Volet Notif Complet": [
+        "Tous les btn Tout allumer",
+        "Tous les btn Tout éteint"
+    ],
+    "Volet Son Activé": [
+        "Volet baissé aucun btn actif",
+        "Son btn actif"
+    ],
+    "Volet Vibreur": [
+        "Volet baissé aucun btn actif",
+        "Vibreur btn actif"
+    ],
+    "Volet Wifi Activé": [
+        "Volet baissé aucun btn actif",
+        "Wifi btn actif"
+    ],
+    "Volet Wifi Bluetooth": [
+        "Volet baissé aucun btn actif",
+        "Bluetooth btn actif"
+    ],
+    "Volume sonnerie": [
+        "Menu paramétre",
+        "Menu son ou sonnerie",
+        "Volume au minimum dans toutes les catégories",
+        "Volume au maximum dans les toutes les catégories"
+    ],
+    "Volet Connexion PC": [
+        "Apparation notif",
+        "Menu rechargement par USB",
+        "Menu Tranfert Photo Vidéo"
+    ],
+    "Appli Récentes": [
+        "Ouvrir le menu appli récentes",
+        "Commencer a glisser une appli"
+    ],
+    "Eteindre": [
+        "Afficher les menu d extinctions",
+        "Glisser vers le haut ou le bas"
+    ],
+    "Appel": [
+        "Accueil Logo Appel",
+        "Menu Appel Logo Pavé num",
+        "Menu pavé numérique",
+        "Menu pavé numérique avec Numéro répondeur et appeler"
+    ],
+    "Transfert d appel": [
+        "Accueil Logo Appel",
+        "Menu Appel Logo Pavé num",
+        "Menu pavé numérique avec Numéro transfert appel et appeler"
+    ],
+    "SMS Créer": [
+        "Accueil Logo SMS",
+        "Menu SMS Logo Démar. Discut",
+        "Entrer le nom d une personne Accepter",
+        "Entrer un message Mon SMS"
+    ],
+    "SMS Supprimer": [
+        "Menu SMS Afficher les sms",
+        "Menu SMS Selectionnez et affichage logo poubelle",
+        "Confirmer la suppresion"
+    ],
+    "Alarme": [
+        "Accueil Logo Horloge",
+        "Menu alarme Logo plus",
+        "Menu Nouvelle alarme : Réglage 2 minutes Vibreur et Valider",
+        "Menu Nouvelle alarme : Réglage selection sonnerie menu",
+        "Menu Nouvelle alarme : Selection sonnerie et volume",
+        "Accueil Sonnerie d alarme en cours"
+    ],
+    "Dictaphone": [
+        "Accueil ou Tiroir appli : Logo Dictaphone",
+        "Menu Dictaphone Vide et Logo REC",
+        "Enregistrement en cours et Strop / Valider",
+        "Nommer l enregistrement fait",
+        "Menu Dictaphone Logo play",
+        "Lecture enregistrement"
+    ],
+    "Prise Vidéo": [
+        "Accueil Logo Photo",
+        "Prise vidéo au noir"
+    ],
+    "Prise Photo": [
+        "Accueil Logo Photo",
+        "Prise Photo au noir"
+    ],
+    "Galerie Lecture Vidéo": [
+        "Accueil Logo Galerie",
+        " Prendre une vidéo au noir",
+        "Selection d une vidéo et appuyer sur play",
+        "Augmenter le son"
+    ],
+    "Galerie Supprimer Photos": [
+        "Accueil Logo Galerie",
+        "Selection de plusieurs photos et bouton suppr",
+        "Validation de la suppresion si dispo"
+    ],
+    "Reseau absent": [
+        "Accueil sans réseau",
+        "Menu blanc  sans réseau"
+    ],
+    "2G": [
+        "Menu paramétre",
+        "Menu Sim ou Réseau",
+        "Menu Selection Sim si double sim",
+        "Menu Type de réseau préféré",
+        "Selection 2G"
+    ],
+    "3G": [
+        "Selection 3G"
+    ],
+    "4G": [
+        "Selection 4G"
+    ],
+    "5G": [
+        "Selection 5G"
+    ],
+    "APN MMS": [
+        "Menu paramétre",
+        "Menu Sim ou Réseau",
+        "Menu Selection Sim si double sim",
+        "Menu Noms du point d accès",
+        "Menu ajouter APN avec identifiants de l operateur"
+    ],
+    "APN Réseau": [
+        "Menu ajouter APN avec identifiants de l operateur"
+    ],
+    "Données mobiles activé": [
+        "Menu paramétre",
+        "Menu Sim ou Réseau",
+        "Menu Selection Sim si double sim",
+        "Activer les données mobiles"
+    ],
+    "Partage connexion": [
+        "Menu Réseau ou Partage de connexion",
+        "Activer le partage de connexion",
+        "Menu appareil connecté",
+        "Paramétres ou Réglage du point d accès",
+        "Réglage mot de passe"
+    ],
+    "WIFI": [
+        "Menu paramétre",
+        "Menu Wi-Fi",
+        "Activer la Wi-Fi",
+        "Selectionner la Wifi Client",
+        "Saisir le mot de passe de la Wifi",
+        "Wifi connecté",
+        "Mot de passe erroné"
+    ],
+    "Bluetooth": [
+        "Menu paramétre",
+        "Menu Bluetooth",
+        "Montrer l apparition un appareil type téléphone",
+        "Montrer l apparition  un appareil type appareil son",
+        "Confirmation association d appareil",
+        "Appareil connecté"
+    ],
+    "Mode Sombre": [
+        "Menu paramétre",
+        "Menu affichage ligne mode ou selection mode",
+        "Mode sombre activé"
+    ],
+    "Sonnerie activer": [
+        "Le bouton vibrer en mode sonnerie inactif",
+        "Le bouton vibrer en mode sonnerie actif"
+    ],
+    "Vibreur": [
+        "Menu son ou sonnerie",
+        "Menu Intensité des vibrations",
+        "Voir les sliders au minumum",
+        "Voir les sliders au maximum"
+    ],
+    "onsommation des applis Batterie": [
+        "Menu paramétre focus sur Batterie",
+        "Menu Batterie",
+        "Menu eco d energie"
+    ],
+    "Optimisation Batterie": [
+        "Menu paramétre focus sur Batterie",
+        "Menu Batterie",
+        "Bouton d optimisation de la batterie"
+    ],
+    "Stockage restant": [
+        "Menu paramétre",
+        "Menu stockage",
+        "Menu des graphs de stockage restants"
+    ],
+    "Localisation activé": [
+        "Menu paramétre focus sur confidentialité ou localisation",
+        "Activer la localisation"
+    ],
+    "Localisation désactivé": [
+        "Menu paramétre focus sur confidentialité ou localisation",
+        "Désactiver la localisation"
+    ],
+    "Localisation amélioré": [
+        "Menu paramétre focus sur confidentialité ou localisation",
+        "Menu localisation avec Wifi bluetooth ou Amelioration position",
+        "Activation Recherche via Wifi et Bluetooth"
+    ],
+    "Suppr. Fichier via Gestionnaire Fichier": [
+        "INSERER LA SD",
+        "Accueil logo Gestionnaire fichier",
+        "Accéder à la mémoire du téléphone",
+        "Acceder à DCIM",
+        "Faire apparaitre le menu contextuel",
+        "Option Déplacer",
+        "Aller sur la SD",
+        "Valider le deplacement",
+        "Accueil logo Gestionnaire fichier",
+        "Accéder à la mémoire du téléphone",
+        "Acceder à DCIM",
+        "Faire apparaitre le menu contextuel",
+        "Option Déplacer",
+        "Aller sur la SD",
+        "Valider le deplacement"
+    ],
+    "Photo Fleur": [
+        "Accueil logo photo",
+        "Menu de prise de photo"
+    ],
+    "Recevoir Mess. Vocal": [
+        "Accueil avec logo d indication de répondeur",
+        "Menu appel onglet répondeur visible",
+        "Menu répondeur avec le message non lu",
+        "Lecture du message du répondeur"
+    ],
+    "Télécharger l app Tiers": [
+        "Accueil avec  focus sur le Play Store",
+        "Accueil de playstore avec focus sur la barre de recherche avec nom",
+        "Liste des appli dispo après recherche dont appli tiers l Waze",
+        "Page de produit application tier avec bouton installer",
+        "Installation en cours"
+    ],
+    "Télécharger l app BTV": [
+        "Accueil avec  focus sur le Play Store",
+        "Accueil de playstore avec focus sur la barre de recherche avec nom",
+        "Liste des appli dispo après recherche dont BTV",
+        "Page de produit application tier avec bouton installer",
+        "Installation en cours"
+    ],
+    "Télécharger l app Orange": [
+        "Accueil avec  focus sur le Play Store",
+        "Accueil de playstore avec focus sur la barre de recherche avec nom",
+        "Liste des appli dispo après recherche dont Orange",
+        "Page de produit application tier avec bouton installer",
+        "Installation en cours"
+    ],
+    "Mettre à jour les applis - Toutes": [
+        "Accueil de playstore avec focus sur mon icone utilisateur",
+        "Catégorie Gérer les applications",
+        "Mise à jour disponibles",
+        "Appuyer sur Tout mettre à jour"
+    ],
+    "Effacer Cache Appareil_photo": [
+        "Menu paramétre focus sur application",
+        "Afficher plus d appli ou liste d appli",
+        "Selectionnez App. Photo",
+        "Focus sur la section Stockage",
+        "Appuyer sur Vider le cache",
+        "Confirmer effacement cache"
+    ],
+    "Effacer Cache BTV": [
+        "Selectionnez BTV",
+        "Focus sur la section Stockage",
+        "Appuyer sur Vider le cache"
+    ],
+    "Effacer Cache Facebook": [
+        "Selectionnez Facebook",
+        "Focus sur la section Stockage",
+        "Appuyer sur Vider le cache"
+    ],
+    "Effacer Cache Mess Vocale Free": [
+        "Selectionnez Mess Vocale Free",
+        "Focus sur la section Stockage",
+        "Appuyer sur Vider le cache"
+    ],
+    "Effacer Cache Maps": [
+        "Selectionnez Cache Maps",
+        "Focus sur la section Stockage",
+        "Appuyer sur Vider le cache"
+    ],
+    "Effacer Cache Orange TV": [
+        "Selectionnez Orange TV",
+        "Focus sur la section Stockage",
+        "Appuyer sur Vider le cache"
+    ],
+    "Effacer Cache Store d appli": [
+        "Selectionnez Store appli",
+        "Focus sur la section Stockage",
+        "Appuyer sur Vider le cache"
+    ],
+    "Effacer Cache Waze": [
+        "Selectionnez Waze",
+        "Focus sur la section Stockage",
+        "Appuyer sur Vider le cache"
+    ],
+    "Effacer données Appareil Photo": [
+        "Menu paramétre focus sur application",
+        "Afficher plus d appli ou liste d appli",
+        "Selectionnez App. Photo",
+        "Focus sur la section Stockage",
+        "Appuyer sur Vider le cache",
+        "Confirmer effacement cache"
+    ],
+    "Effacer données BTV": [
+        "Selectionnez Btv",
+        "Focus sur la section Autorisation",
+        "Appuyer sur les options non autorisés par l autorisation",
+        "Valider par autoriser tous le temps ou seulement si l appli ouverte"
+    ],
+    "Effacer données Facebook": [
+        "Selectionnez Facebook",
+        "Focus sur la section Autorisation",
+        "Appuyer sur les options non autorisés par l autorisation",
+        "Valider par autoriser tous le temps ou seulement si l appli ouverte"
+    ],
+    "Effacer données Mess Vocale Free": [
+        "Selectionnez Mess Vocale Free",
+        "Focus sur la section Autorisation",
+        "Appuyer sur les options non autorisés par l autorisation",
+        "Valider par autoriser tous le temps ou seulement si l appli ouverte"
+    ],
+    "Effacer données Maps": [
+        "Selectionnez Maps",
+        "Focus sur la section Autorisation",
+        "Appuyer sur les options non autorisés par l autorisation",
+        "Valider par autoriser tous le temps ou seulement si l appli ouverte"
+    ],
+    "Effacer données Orange TV": [
+        "Selectionnez Orange TV",
+        "Focus sur la section Autorisation",
+        "Appuyer sur les options non autorisés par l autorisation",
+        "Valider par autoriser tous le temps ou seulement si l appli ouverte"
+    ],
+    "Effacer données Store d appli": [
+        "Selectionnez Store d appli",
+        "Focus sur la section Autorisation",
+        "Appuyer sur les options non autorisés par l autorisation",
+        "Valider par autoriser tous le temps ou seulement si l appli ouverte"
+    ],
+    "Effacer données Waze": [
+        "Selectionnez Waze",
+        "Focus sur la section Autorisation",
+        "Appuyer sur les options non autorisés par l autorisation",
+        "Valider par autoriser tous le temps ou seulement si l appli ouverte"
+    ],
+    "Autorisation App. Photo": [
+        "Menu paramétre focus sur application",
+        "Afficher plus d appli ou liste d appli",
+        "Selectionnez App. Photo",
+        "Focus sur la section Autorisation",
+        "Appuyer sur les options non autorisés par l autorisation",
+        "Valider par autoriser tous le temps ou seulement si l appli ouverte"
+    ],
+    "Desinstall BTV": [
+        "Accueil avec logo BTV",
+        "Menu contextuel après longue pression focus desinstall",
+        "Confirmer desinstall"
+    ],
+    "Desinstall Facebook": [
+        "Accueil avec logo Facebook",
+        "Menu contextuel après longue pression focus desinstall",
+        "Confirmer desinstall"
+    ],
+    "Desinstall Mess Vocal Free": [
+        "Accueil avec logo Mess Vocal Free",
+        "Menu contextuel après longue pression focus desinstall",
+        "Confirmer desinstall"
+    ],
+    "Desinstall Orange TV": [
+        "Accueil avec logo Orange TV",
+        "Menu contextuel après longue pression focus desinstall",
+        "Confirmer desinstall"
+    ],
+    "Youtube Musique": [
+        "Accueil Dossier google ou logo direct",
+        "Dossier google si présent focus sur Logo yt musique",
+        "Icone de profil en haut à droite",
+        "Paramétres",
+        "Bibliothéque et téléchargement",
+        "Afficher les fichiers de l appareil",
+        "On revient à l acceuil de youtube music focus sur l onglet bibliot.",
+        "Page accueil de l onglet bibiliothe focus sur Album",
+        "Onglet focus sur ficher de l appareil",
+        "Focus sur l album test de l opérateur",
+        "Focus sur le titre",
+        "Lire et augmenter le volume de la musique"
+    ],
+    "Youtube": [
+        "Accueil Dossier google ou logo direct",
+        "Dossier google si présent focus sur Logo yt musique",
+        "Ouvrir une vidéo neutre l Fire place par exemple",
+        "Augmenter le son de la video"
+    ],
+    "ode verrouillage": [
+        "Juste prendre la page de verrouillage avec code (Si possible)"
+    ],
+    "Schéma verouillage": [
+        "Juste prendre la page de verrouillage avec schéma  (Si possible)"
+    ],
+    "Mise à jour du téléphone": [
+        "Menu paramétre",
+        "Menu a propos du tel ou Mise à jour system",
+        "Page et bouton téléchargement de la MAJ",
+        "Téléchargement de la maj",
+        "Installation ou bouton installation"
+    ],
+    "Reinit. Param Localisation Confident": [
+        "Menu paramétre",
+        "Autres paramétres ou paramétres généreaux",
+        "Effacer toutes les données ou Reinit du mobile",
+        "Selection d un mode de reinitialisation ( si disponible )"
+    ],
+    "Reinit. Param Réseau": [
+        "Menu paramétre",
+        "Autres paramétres ou paramétres généreaux",
+        "Effacer toutes les données ou Reinit du mobile",
+        "Selection d un mode de reinitialisation ( si disponible )"
+    ],
+    "Reinit. Param Usine - Dans les menus": [
+        "Menu paramétre",
+        "Autres paramétres ou paramétres généreaux",
+        "Effacer toutes les données ou Reinit du mobile",
+        "Selection d un mode de reinitialisation ( si disponible )"
+    ],
+    "Réinit. Param Usine - Au demarrage": [
+        "Refaire su photoshop. Pas de screenshot possible"
+    ]
   }
 }
 
