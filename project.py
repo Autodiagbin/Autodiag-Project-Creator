@@ -22,7 +22,9 @@ def construct_folders(user_settings):
             for match in collect:
                 if match in all_results.keys():
                     folders = folders + [i for i in all_results[match].keys() if i]
-                    todo[match] = [i for i in all_results[match].values() if i]
+                    for fld in all_results[match].keys():
+                        todo[fld] = [i for i in all_results[match][fld] if i]
+
             folders = folders + list(all_results["Commun"].keys())
             for com in all_results["Commun"].keys():
                 todo[com] = all_results["Commun"][com]
