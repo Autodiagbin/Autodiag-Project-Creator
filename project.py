@@ -13,32 +13,49 @@ DATABASE_BASE = os.path.join(CUR_DIR, "src", "arborescence_base.json")
 
 
 def construct_folders(user_settings):
+    """
+    Construction du dictionnaire et de la liste dans SCREENSHOT selon les spécificités et les options
+    Args:
+        user_settings: Dictionnaire des entrés de l'utilisateur sur l'application -> List[Str]
+
+    Returns:
+        [0]folders: Liste des dossiers constitués -> List[Str]
+        [1]planning: Dictionnaire des actions à faire sur le screenshot dans le dossier "Dossier" : "Action" -> Dict
+    """
     collect = user_settings["specifite"] + user_settings["options"]
     if os.path.exists(DATABASE):
         with open(DATABASE, "r", encoding='utf-8') as db:
             all_results = json.load(db)
             folders = []
-            todo = {}
+            planning = {}
             for match in collect:
                 if match in all_results.keys():
                     folders = folders + [i for i in all_results[match].keys() if i]
                     for fld in all_results[match].keys():
-                        todo[fld] = [i for i in all_results[match][fld] if i]
+                        planning[fld] = [i for i in all_results[match][fld] if i]
 
             folders = folders + list(all_results["Commun"].keys())
             for com in all_results["Commun"].keys():
-                todo[com] = all_results["Commun"][com]
-    return folders, todo
+                planning[com] = all_results["Commun"][com]
+    return folders, planning
 
 
 def construct_tree(user_settings):
-    todo = construct_folders(user_settings)[1]
+    """
+    Construction final du dossier SCREENSHOT
+    Args:
+        user_settings: Dictionnaire des entrés de l'utilisateur sur l'application -> List[Str]
+
+    Returns:
+        all_screenshots: Un dictionnaire comprenant les dossier crées et ce qu'il faut y faire en valeur -> Dict
+    """
+    all_screenshots = construct_folders(user_settings)[1]
     with open(DATABASE_BASE, "r", encoding='utf-8') as db:
         base = json.load(db)
     base["SCREENSHOT"] = base["SCREENSHOT"] + list(construct_folders(user_settings)[0])
     with open(FOLDERS_DATABASE, "w", encoding='utf-8') as db:
         json.dump(obj=base, fp=db, indent=4)
-    return todo
+    return all_screenshots
 
 
 class Project:
@@ -58,14 +75,13 @@ class Project:
         self.todo = {}
 
     def create_project(self):
-        # TODO : Vérifier ce que retourne cette fonction et agir en conséquence en créant l'arbre avant traitement
         self.todo = construct_tree(user_settings=self.__dict__)
         print(self.todo)
         if os.path.isfile(FOLDERS_DATABASE):
             with open(FOLDERS_DATABASE, "r") as fd:
                 data = json.load(fd)
                 for dir_root in data:
-                    if self.path != "" or self.path != None:
+                    if self.path != "" or self.path is not None:
                         path = os.path.join(self.path, dir_root)
                         os.makedirs(path, exist_ok=True)
                         for dirs in data[dir_root]:
