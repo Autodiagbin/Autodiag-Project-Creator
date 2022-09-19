@@ -416,10 +416,10 @@ class AutodiagProjectManager(object):
     def proceed(self):
         # Si la destination n'est pas communiqué on défini le répertoire dans "export"
         if os.path.isdir(self.input_dir.text()):
-            directory = os.path.join(self.input_dir.text(), self.input_prefix.text() + self.input_model.text())
+            directory = os.path.normpath(os.path.join(self.input_dir.text(), self.input_prefix.text() + self.input_model.text()))
         else:
             os.makedirs(EXPORT_DIR, exist_ok=True)
-            directory = os.path.join(EXPORT_DIR, self.input_prefix.text() + self.input_model.text())
+            directory = os.path.normpath(os.path.join(EXPORT_DIR, self.input_prefix.text() + self.input_model.text()))
 
         # On vérifie que le dossier n'existe pas déja
         if os.path.exists(directory):
