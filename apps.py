@@ -9,12 +9,12 @@ CUR_DIR = os.path.abspath(os.getcwd())
 DATA_DIR = os.path.join(CUR_DIR, "data")
 FOLDERS_DATABASE = os.path.join(DATA_DIR, "arborescence_dossier.json")
 EXPORT_DIR = os.path.join(CUR_DIR, "Export")
-DB = TinyDB('historique.json')
+DB = TinyDB(r'\\Srv-slb-data1\SERVICE_QUALITE\Ryad Mansouri\Autodiag Project Creator Files\historique.json')
 
 
 class AutodiagProjectManager(object):
     def __init__(self) -> None:
-        self.version = "0.1"
+        self.version = "0.1.8"
         self.tabs = QtWidgets.QTabWidget(main_window)
         self.tab_run = QtWidgets.QWidget()
         self.btn_proceed = QtWidgets.QPushButton(self.tab_run)
@@ -507,7 +507,8 @@ class AutodiagProjectManager(object):
             i += 1
 
     def open_dir(self, path):
-        if path == "" or path is not None or path is False:
+        # try:
+        if path == "" or path is None or path is False:
             row = self.table_histo.currentItem().row()
             path = self.table_histo.item(row, 3).text()
 
@@ -516,6 +517,10 @@ class AutodiagProjectManager(object):
             return True
         self.update_info("Le répertoire n'a pas été créer correctement et ne s'ouvre pas", "error")
         return False
+
+    # except(Exception,):
+    #     print("NO DIR")
+    #     return
 
     def get_directory(self):
         filepath = QtWidgets.QFileDialog.getExistingDirectory(self.input_dir, 'Hey! Select a File')
