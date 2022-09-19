@@ -5,11 +5,19 @@ import os
 import project
 from tinydb import TinyDB, where
 
+ONLINE_DIR = r"\\Srv-slb-data1\SERVICE_QUALITE\Ryad Mansouri\Autodiag Project Creator Files\historique.json"
+
 CUR_DIR = os.path.abspath(os.getcwd())
 DATA_DIR = os.path.join(CUR_DIR, "data")
 FOLDERS_DATABASE = os.path.join(DATA_DIR, "arborescence_dossier.json")
 EXPORT_DIR = os.path.join(CUR_DIR, "Export")
-DB = TinyDB(r'\\Srv-slb-data1\SERVICE_QUALITE\Ryad Mansouri\Autodiag Project Creator Files\historique.json')
+
+if os.path.exists(ONLINE_DIR):
+    DB = TinyDB(r'\\Srv-slb-data1\SERVICE_QUALITE\Ryad Mansouri\Autodiag Project Creator Files\historique.json')
+    print("ONLINE")
+else:
+    DB = TinyDB('historique.json')
+    print("OFFLINE")
 
 
 class AutodiagProjectManager(object):
