@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autodiag - Création de projet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rippleui@1.12.1/dist/css/styles.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+  </head>
+
+  <body>
+    <div class="container text-center">
+      <div class="content">
+        <div class="navbar navbar-glass mb-5 fixed w-3/4 mx-auto z-100">
+          <div class="text-4xl">🗳️</div>
+
+          <div class="navbar-start">
+            <a class="navbar-item font-bold">Autodiag Project Creator</a>
+          </div>
+          <div class="navbar-end">
+            <a class="navbar-item">Nouveau Projet</a>
+          <label for="drawer-right" class="btn btn-solid-warning">Historique</label>
+
+          </div>
+        </div>
+
+        <spline-viewer url="https://prod.spline.design/C9apEKzTTqna81A8/scene.splinecode" events-target="global" class="w-3/5 mx-auto z-0"></spline-viewer>
+
+        
+
+        <div class="btn-group my-5 mx-auto btn-group-scrollable">
+          <input
+            type="radio"
+            name="options"
+            data-content="Bouygues"
+            class="btn btn-solid-primary"
+          />
+          <input
+            type="radio"
+            name="options"
+            data-content="Free"
+            class="btn btn-solid-error"
+          />
+          <input
+            type="radio"
+            name="options"
+            data-content="BTBD"
+            class="btn btn-solid-primary"
+          />
+          <input
+            type="radio"
+            name="options"
+            data-content="Orange"
+            class="btn btn-solid-warning"
+          />
+        </div>
+
+        <div class="section flex w-full justify-center gap-4">
+          <select class="select" aria-placeholder="Marque" placeholder="Marque">
+            <option>Marque...</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+          <div class="divider divider-vertical mx-0 h-10"></div>
+          <input class="input input-solid" placeholder="Modéle" />
+        </div>
+
+        <div class="btn-group my-5 btn-group-scrollable mx-auto">
+          <input type="radio" name="eSim" data-content="eSim" class="btn" />
+          <input type="radio" name="5G" data-content="5G" class="btn" />
+          <input
+            type="radio"
+            name="servGoogle"
+            data-content="Serv. Google"
+            class="btn"
+          />
+          <input
+            type="radio"
+            name="featurePhone"
+            data-content="Features Phone"
+            class="btn"
+          />
+          <input
+            type="radio"
+            name="usbTypeA"
+            data-content="USB Type-A"
+            class="btn"
+          />
+          <input
+            type="radio"
+            name="usbTypeMicrousb"
+            data-content="USB Type-Micro-USB"
+            class="btn"
+          />
+          <input
+            type="radio"
+            name="appPhotoSpecial"
+            data-content="App. Photo Special"
+            class="btn"
+          />
+        </div>
+
+        <div class="btn-group my-5 btn-group-scrollable mx-auto">
+          <input type="radio" name="bixsby" data-content="Bixsby" class="btn" />
+          <input
+            type="radio"
+            name="silencieuxOnOff"
+            data-content="Silencieux ON/FF"
+            class="btn"
+          />
+          <input
+            type="radio"
+            name="raccourcisCamera"
+            data-content="Raccourcis Camera"
+            class="btn"
+          />
+          <input
+            type="radio"
+            name="boutonCustom"
+            data-content="Bouton Option/Custom"
+            class="btn"
+          />
+          <input
+            type="radio"
+            name="boutonCentral"
+            data-content="Bouton physique central"
+            class="btn"
+          />
+        </div>
+
+        <div class="btn-group my-5 btn-group-scrollable mx-auto">
+          <input
+            type="radio"
+            name="generique"
+            data-content="Générique"
+            class="btn btn-solid-primary"
+          />
+          <input
+            type="radio"
+            name="specifique"
+            data-content="Spécifique"
+            class="btn btn-solid-primary"
+          />
+        </div>
+        <label for="destination" class="mr-2">Destination: </label>
+        <input type="file" class="input-file input-file-sm" id="destination" />
+        <button class="btn btn-block btn-solid-success my-5">
+          Créer le projet
+        </button>
+
+        </div>
+        
+          <input type="checkbox" id="drawer-right" class="drawer-toggle" />
+          <label class="overlay" for="drawer-right"></label>
+          <div class="drawer drawer-right">
+            <div class="drawer-content pt-20 flex flex-col h-full">
+              <label for="drawer-right" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
+              <div>
+                <h2 class="text-xl font-medium mb-5">En cours d'utilisation</h2>
+
+                <div class="flex w-full overflow-x-auto">
+                  <table class="table-compact table max-w-4xl">
+                    <thead>
+                      <tr>
+                        <th>Modéle</th>
+                        <th>Date</th>
+                        <th>Créateur</th>
+                        <th>Localisation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="bg-emerald-950 text-white">
+                        <td>Oppo find X5</td>
+                        <td>16/12/24</td>
+                        <td>SVIGNUALES</td>
+                        <td><a class="link link-success link-ghost-success" href="/">//srv-slb-data1/SERVICE</a></td>
+                      </tr>
+                      <tr class="bg-red-950 text-white">
+                        <td>Apple iPhone X</td>
+                        <td>16/12/24</td>
+                        <td>RMANSOURI</td>
+                        <td><a class="link link-error link-ghost-error" href="/">//srv-slb-data1/SERVICE</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+              <div class="h-full flex flex-row justify-end items-end gap-2">
+                <button class="btn btn-ghost">Ouvrir</button>
+                <button class="btn btn-error">Effacer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </body>
+</html>

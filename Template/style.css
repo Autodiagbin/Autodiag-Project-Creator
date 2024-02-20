@@ -1,0 +1,32 @@
+body{
+}
+
+.container {
+  width: 500px;
+  margin: 20px auto;
+  border-radius: 4px;
+}
+
+
+.header {
+  background-color: #f7f7f7;
+  padding: 10px;
+  text-align: center;
+}
+
+.content {
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 10px;
+}
+
+.label {
+  display: block;
+  margin-bottom:
+}
+
+.drawer{
+  max-width: 50rem !important;
+}
