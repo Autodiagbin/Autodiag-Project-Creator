@@ -197,6 +197,27 @@
           </div>
         </div>
     </div>
+    <script>
+      // Get all radio buttons with class "btn"
+let radioButtons = document.querySelectorAll('.btn[type="radio"]');
 
+// Add event listener to each radio button
+radioButtons.forEach((radioButton) => {
+    radioButton.addEventListener('click', function(event) {
+        // If the radio button is already checked, uncheck it
+        if (this.checked) {
+          console.log("IF : "+this.checked)
+            this.checked = false;
+            // event.preventDefault();
+        }
+        else{
+          console.log("ELSE : "+this.checked)
+          this.checked = true;
+            // event.preventDefault();
+        }
+    });
+});
+
+    </script>
   </body>
 </html>
