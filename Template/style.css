@@ -30,3 +30,12 @@ body{
 .drawer{
   max-width: 50rem !important;
 }
+
+.btn-group > .btn-active, .btn-group > input[type="radio"]:checked{
+  background-color: #133929 !important;
+  color: #13ca6f;
+  margin-right: 2px;
+  font-weight: bold;
+
+
+}
