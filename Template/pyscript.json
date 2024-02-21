@@ -1,0 +1,3 @@
+{
+    "packages": ["os","json","logging","datetime","datetime","pyscript"]
+}
